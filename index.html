@@ -6,54 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Asistec</title>
+    
 </head>
 <body>
     <header>
-        <h1>ASISTEC</h1>
+        <img class="logo" src="media/logo.png" alt="logo">
+        <h1 class="titulo">ASISTEC</h1>
     </header>
     <nav>
         <ul>
-            <li><a href="#">Objetivo</a></li>
-            <li><a href="#">Misión</a></li>
-            <li><a href="#">Visión</a></li>
-            <li><a href="#">¿Quienes somos?</a></li>
-            <li><a href="#">Programa educativo IGE</a></li>
-            <li><a href="#">Dudas frecuentes</a></li>
+            <li><a href="#contenido" id="objetivoC">Objetivo</a></li>
+            <li><a href="#contenido" id="misionC">Misión</a></li>
+            <li><a href="#contenido" id="visionC">Visión</a></li>
+            <li><a href="#somos">¿Quienes somos?</a></li>
+            <select name="opc" id="opciones">
+                <option selected>Programa educativo IGE</option>
+                <option>Objetivo</option>
+                <option>Misión</option>
+                <option>Visión</option>
+                <option>Reticula</option>
+            </select>
+            <select id="dudas" name="opc">
+                <option selected>Dudas frecuentes</option>
+                <option>Créditos</option>
+                <option>Servicio social</option>
+                <option>Residencia profesional</option>
+                <option>Inglés</option>
+                <option>Veranos</option>
+            </select>
             <li><a href="#">Correos de contacto personal</a></li>
-            <li><a href="#">Croquis de la institución</a></li>
+            <li><a href="#croquis">Croquis de la institución</a></li>
         </ul>
     </nav>
     <div class="carrusel">
-        imagenes
+        <img src="https://placekitten.com/1100/250" alt="carrusel">
     </div>
-    <div class="contenido">
-        <div class="objetivo">
-            <button>Objetivo</button>
-            <div class="objetivo_cont">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde optio rem voluptatibus qui et dolorem suscipit? Repellat dolores tempore eligendi sequi, aspernatur nulla asperiores eum ratione harum, totam at provident?</p>
+    <div class="contenido" id="contenido">
+        <div class="botones">
+            <button class="botonactivo" id="btn_objetivo">Objetivo</button>
+            <button id="btn_mision">Misión</button>
+            <button id="btn_vision">Visión</button>
+        </div>
+        <div class="textos">
+            <div class="objetivo" id="objetivo">
+                <h2>Objetivo</h2>
+                <p>Brindar asesoría virtual para resolver problemáticas administrativas mediante una página web a los alumnos de Ingeniería en Gestión Empresarial.</p>
+            </div>
+            <div class="mision" id="mision">
+                <h2>Misión</h2>
+                <p>Asistec es una plataforma digital tecnológica de vanguardia, con el objetivo
+                    de ser un medio de comunicación que ofrezca la mejor información para los
+                    alumnos del Tecnológico de México Campus Colima, que tiene como objetivo
+                    prestar un servicio educativo.
+                    </p>
+            </div>
+            <div class="vision" id="vision">
+                <h2>Visión</h2>
+                <p>Ser una página web líder y competitiva comprometida con la resolución de
+                    dudas al estudiantado con información de calidad en el sector educativo.
+                    </p>
             </div>
         </div>
-        <div class="mision">
-            <button>Misión</button>
-            <div class="mision_cont">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde optio rem voluptatibus qui et dolorem suscipit? Repellat dolores tempore eligendi sequi, aspernatur nulla asperiores eum ratione harum, totam at provident?</p>
+    </div>
+    <div class="info">
+        <h1 class="asistec">¿Por qué decidir usar Asistec?</h1>
+        <div class="beneficios">
+            <div class="ben">
+                <div class="icono">
+                    <img src="./media/resize.svg" alt="experiencia">
+                </div>
+                <p>Ofrecemos un medio concreto para una buena experiencia universitaria.</p>
             </div>
-        </div>
-        <div class="vision">
-            <button>Visión</button>
-            <div class="vision_cont">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde optio rem voluptatibus qui et dolorem suscipit? Repellat dolores tempore eligendi sequi, aspernatur nulla asperiores eum ratione harum, totam at provident?</p>
+            <div class="benp">
+                <div class="icono">
+                    <img src="./media/processor.svg" alt="inovacion">
+                </div>
+                <p>Buscamos la inovación orientada en el desarrollo tecnológico.</p>
+            </div>
+            <div class="ben">
+                <div class="icono">
+                    <img src="./media/handshake.svg" alt="resolver">
+                </div>
+                <p>Estamos comprometidos a resolver cualquier duda presentada por el alumno.</p>
             </div>
         </div>
     </div>
-    <div class="croquis">
-        <img src="/media/mapa.png" alt="croquis">
+    <div id="croquis" class="croquis">
+        <h2 class="subtitulo">Croquis de la institución</h2>
+        <img src="/media/mapa.png" alt="croquis" width="862" height="561">
     </div>
-    <div class="somos">
-        <h2>¿Quienes somos?</h2>
-        <img src="#" alt="Nosotros">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde optio rem voluptatibus qui et dolorem suscipit? Repellat dolores tempore eligendi sequi, aspernatur nulla asperiores eum ratione harum, totam at provident?</p>
+    <div class="somos" id="somos">
+        <div class="img_txt">
+            <h2>¿Quienes somos?</h2>
+            <img src="https://placekitten.com/793/409" alt="Nosotros">
+        </div>
+        <p>Asistec esta conformada por 5 alumnos lideres del TecNM campus Colima de los cuales Rubi Aguirre Jary Sanchez y Karla Valle forman parte del programa educativo IGE, mientras que Antonio Galvan y Eduardo Espiritu son pertenecientes al programa Ing. Informatica; Esta pagina web es creada debido a la necesidad que surgió entre nosotros de aclarar dudas academicas y administrativas de forma rapida, facil y confiable, por ello aquí es el sitio correcto para facilitar tu estancia en dicha institución.</p>
     </div>
     
 </body>
+<script src="./script.js"></script>
 </html>

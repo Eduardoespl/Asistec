@@ -1,95 +1,244 @@
-header{
-    border-top: 4px solid blue;
-    border-left: 4px solid blue;
-    border-right: 4px solid blue;
-    display: flex;
+:root{
+    --naranja: #FF6919;
+    --azul: #02006D;
+    --amarillo: #FDB604;
+    --turquesa: #02D2C5;
+    --gris: #737373;
 }
 
-nav{
-    border: 4px solid blue;
-    background-color: green;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
 }
 
 a{
+    color: black;
     text-decoration: none;
-    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+li{
+    list-style: none;
     padding: 10px;
 }
 
+nav{
+    margin: 0 auto;
+    background-color: var(--naranja);
+}
+
 ul{
-    list-style: none;
-}
-
-.carrusel{
-    border-bottom: 4px solid blue;
-    border-left: 4px solid blue;
-    border-right: 4px solid blue;
+    width: 1280px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
+    justify-content: space-around;
 
-.contenido{
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;;
-}
-
-.objetivo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.mision{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.vision{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.mision_cont{
-    display: none;
-}
-
-.vision_cont{
-    display: none;
 }
 
 button{
-    color: white;
-    background-color: rgb(255, 89, 0);
-    border: none;
-    width: 200px;
-    height: 50px;
+    background-color: white;
+    width: 40rem;
+    font-weight: bold;
+    color: var(--azul);
+    border: 2px solid var(--naranja);
+    padding: 10px;
+    font-size: 2.4rem;
+    border-radius: 5px;
     cursor: pointer;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+select{
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: none;
+    color: black;
+    background-color: var(--naranja);
+}
+
+.titulo{
+    font-size: 4rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.logo{
+    width: 67px;
+    height: 67px;
+}
+
+#dudas{
+    width: 160px;
+    outline: none;
+}
+
+#opciones{
+    outline: none;
+}
+
+.carrusel{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.botonactivo{
+    background-color: var(--naranja);
+    color: white;
+    border: none;
+}
+
+.objetivo{
+    width: 980px;
+    font-size: 2rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.mision{
+    width: 980px;
+    font-size: 2rem;
+    margin: 0 auto;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.vision{
+    width: 980px;
+    font-size: 2rem;
+    margin: 0 auto;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contenido{
+    border-bottom: 2px solid var(--naranja);
+}
+
+.textos{
+    margin-top: 4rem;
+    height: 150px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    align-items: center;
+    margin: 0 auto;
+    border-bottom: 2px solid var(--naranja);
+}
+
+.beneficios{
+    display: flex;
+    width: 985px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.ben{
+    width: 303px;
+    font-size: 2rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #02006D;
+}
+
+.benp{
+    width: 250px;
+    font-size: 2rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #02006D;
+}
+
+
+.asistec{
+    font-size: 3rem;
 }
 
 .croquis{
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: var(--naranja) 2px solid;
 }
 
-img{
-    width: 30%;
-    height: 30%;
+.subtitulo{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.somos p{
+    font-size: 2.5rem;
+    padding: 4.5rem;
+}
+
+.img_txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.img_txt h2{
+    font-size: 4rem;
+    margin-right: 2rem;
+    color: var(--azul);
+}
+
+.icono{
+    background-color: var(--naranja);
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
