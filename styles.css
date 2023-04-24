@@ -18,10 +18,10 @@ html{
 }
 
 a{
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 1.6rem;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 li{
@@ -39,7 +39,7 @@ ul{
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
-
+    
 }
 
 button{
@@ -81,10 +81,12 @@ select{
 #dudas{
     width: 160px;
     outline: none;
+    color : white;
 }
 
 #opciones{
     outline: none;
+    color : white;
 }
 
 .carrusel{
@@ -110,7 +112,7 @@ select{
     width: 980px;
     font-size: 2rem;
     margin: 0 auto;
-    display: flex;
+    display: none;
     align-items: center;
     flex-direction: column;
     gap: 10px;
@@ -148,7 +150,7 @@ select{
 
 .textos{
     margin-top: 4rem;
-    height: 150px;
+    margin-bottom: 4rem;
 }
 
 .info{
@@ -218,6 +220,8 @@ select{
 .somos p{
     font-size: 2.5rem;
     padding: 4.5rem;
+    color: var(--azul);
+    text-align: justify;
 }
 
 .img_txt{
@@ -230,7 +234,7 @@ select{
 .img_txt h2{
     font-size: 4rem;
     margin-right: 2rem;
-    color: var(--azul);
+    color: black;
 }
 
 .icono{
