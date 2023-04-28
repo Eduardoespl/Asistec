@@ -16,13 +16,7 @@
     <nav>
         <ul>
             <li><a href="#somos">¿Quienes somos?</a></li>
-            <select name="opc" id="opciones">
-                <option selected>Programa educativo IGE</option>
-                <option>Objetivo</option>
-                <option>Misión</option>
-                <option>Visión</option>
-                <option>Reticula</option>
-            </select>
+            <li><a href="#">Programa educativo</a></li>
             <select id="dudas" name="opc">
                 <option selected>Dudas frecuentes</option>
                 <option>Créditos</option>
@@ -35,8 +29,35 @@
             <li><a href="#croquis">Croquis de la institución</a></li>
         </ul>
     </nav>
-    <div class="carrusel">
-        <img src="https://placekitten.com/1100/250" alt="carrusel">
+    <div class="slide">
+        <div class="slide-inner">
+            <input class="slide-open" type="radio" id="slide-1" 
+                  name="slide" aria-hidden="true" hidden="" checked="checked">
+            <div class="slide-item">
+                <img src="/media/c1.jpg">
+            </div>
+            <input class="slide-open" type="radio" id="slide-2" 
+                  name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <img src="/media/carrusel1.jpg">
+            </div>
+            <input class="slide-open" type="radio" id="slide-3" 
+                  name="slide" aria-hidden="true" hidden="">
+            <div class="slide-item">
+                <img src="/media/c3.jpeg">
+            </div>
+            <ol class="slide-indicador">
+                <li>
+                    <label for="slide-1" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-2" class="slide-circulo">•</label>
+                </li>
+                <li>
+                    <label for="slide-3" class="slide-circulo">•</label>
+                </li>
+            </ol>
+        </div>
     </div>
     <div class="contenido" id="contenido">
         <div class="botones">
@@ -100,11 +121,11 @@
                     Esta página web es creada debido a la necesidad de aclarar dudas académicas y administrativas de forma rápida, fácil y confiable, por lo que aquí es el sitio correcto para facilitar tu estancia en dicha institución.
                 </p>
             </div>
-            <img src="https://placekitten.com/793/409" alt="Nosotros">
+            <div class="imagen">
+                <img src="/media/imagen1.jpg" alt="Nosotros">
+            </div>
         </div>
-        
     </div>
-    
 </body>
 <script src="./script.js"></script>
 </html>
