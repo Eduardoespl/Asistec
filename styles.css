@@ -109,39 +109,58 @@ select{
 }
 
 .objetivo{
-    width: 980px;
+    width: 300px;
     font-size: 2rem;
     margin: 0 auto;
     display: none;
     align-items: center;
+    text-align: center;
     flex-direction: column;
+    position: relative;
+    left: -33.3%;
     gap: 10px;
-    margin-top: 2rem;
     margin-bottom: 2rem;
+    padding: 10px;
+
+    border-bottom: 2px solid var(--naranja);
+    border-left: 2px solid var(--naranja);
+    border-right: 2px solid var(--naranja);
 }
 
 .mision{
-    width: 980px;
+    width: 300px;
     font-size: 2rem;
     margin: 0 auto;
     display: none;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     gap: 10px;
-    margin-top: 2rem;
     margin-bottom: 2rem;
+    padding: 10px;
+
+    border-bottom: 2px solid var(--naranja);
+    border-left: 2px solid var(--naranja);
+    border-right: 2px solid var(--naranja);
 }
 
 .vision{
-    width: 980px;
+    width: 300px;
     font-size: 2rem;
     margin: 0 auto;
     display: none;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     gap: 10px;
-    margin-top: 2rem;
     margin-bottom: 2rem;
+    position: relative;
+    left: 33.3%;
+    padding: 10px;
+
+    border-bottom: 2px solid var(--naranja);
+    border-left: 2px solid var(--naranja);
+    border-right: 2px solid var(--naranja);
 }
 
 .contenido{
@@ -149,7 +168,7 @@ select{
 }
 
 .textos{
-    margin-top: 4rem;
+    margin-top: 0;
     margin-bottom: 4rem;
 }
 
@@ -247,6 +266,8 @@ select{
     margin-bottom: 2rem;
 }
 
+/*CARRUSEL*/
+
 .slide {
     position: relative;
     left: 9%;
@@ -306,7 +327,8 @@ select{
 }
 #slide-1:checked ~ .control-1,
 #slide-2:checked ~ .control-2,
-#slide-3:checked ~ .control-3 {
+#slide-3:checked ~ .control-3,
+#slide-4:checked ~ .control-4 {
     display: block;
 }
 .slide-indicador {
@@ -338,7 +360,9 @@ select{
 #slide-2:checked ~ .control-2 ~ .slide-indicador 
       li:nth-child(2) .slide-circulo,
 #slide-3:checked ~ .control-3 ~ .slide-indicador 
-      li:nth-child(3) .slide-circulo {
+      li:nth-child(3) .slide-circulo,
+#slide-4:checked ~ .control-4 ~ .slide-indicador
+      li:nth-child(4) .slide-circulo {
     color: #428bca;
 }
 #titulo {
