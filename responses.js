@@ -10,10 +10,10 @@ function getBotResponse(input) {
 
     // Simple responses
     if (input == "Hola") {
-        return "Hola, puedes preguntarme sobre lo que nesecites!";
+        return "Hola, puedes preguntarme sobre lo que nececites!";
     }
     else if (input == "hola") {
-        return "Hola, puedes preguntarme sobre lo que nesecites!";
+        return "Hola, puedes preguntarme sobre lo que nececites!";
     }
     else if (input == "adios") {
         return "Hablaremos luego!";
