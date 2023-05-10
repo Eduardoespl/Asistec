@@ -35,7 +35,7 @@ function getTime() {
 
 // Gets the first message
 function firstBotMessage() {
-    let firstMessage = "Hola, cual es tu pregunta?"
+    let firstMessage = "Bienvenido a ASISSTEC 👋, ¿en qué podemos ayudarte? </br>1️⃣ Créditos</br> 2️⃣ Servicio Social</br> 3️⃣ Residencia profesional </br>4️⃣ Segunda lengua </br>5️⃣ Veranos"
     document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
 
     let time = getTime();
